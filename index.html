@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>DevPortfolio</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <div class="avatar-inner">
+                    <img src="image/poto.jpg" alt="Divo Al Ghafar" class="avatar-img">
+                </div>
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Divo Al Ghafar</span>
+            </h1>
+            <p class="hero-subtitle">Software Developer</p>
+            <p class="hero-description">
+                Crafting beautiful, scalable, and user-friendly web applications
+                with modern technologies and best practices.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://wa.me/6281289768510" class="social-link" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.408.002 12.045c0 2.12.54 4.189 1.578 6.04L0 24l6.117-1.605a11.803 11.803 0 005.925 1.586h.005c6.631 0 12.046-5.409 12.048-12.045.002-3.218-1.248-6.242-3.511-8.511z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/divo-alghafar/" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/divoalghfr" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1660810731526-0720827cbd38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BlciUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3Njg4NTE4NjB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Developer Workspace" class="about-img">
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I am Divo Al Ghafar, a Software Developer and Technical Writer specialist focused on 
+                        building modern web applications and precise technical documentation.
+                    </p>
+                    <p class="about-text">
+                        With a solid academic background (GPA 3.73) and a proven track record of delivering projects 
+                        across diverse industries, I excel at bridging the gap between complex programming logic and 
+                        effective design principles. I am proficient in frameworks such as Next.js and Laravel, with 
+                        hands-on experience in Cloud (Azure/Docker) and Artificial Intelligence.
+                    </p>
+                    <p class="about-text">
+                        As a former General Mentor for a 1st place award-winning tech team, I combine technical 
+                        proficiency with leadership skills to create high-quality, scalable digital products.
+                    </p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <div class="stat-value">10+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <div class="stat-value">30+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                    </svg>
+                    <div class="stat-value">2+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <svg class="stat-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <div class="stat-value">2+</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title gradient-text">Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Next.js</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Boostrap CSS</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title gradient-text">Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Express</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Laravel</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">>.NET</span>
+                                <span class="skill-percentage">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">>Python</span>
+                                <span class="skill-percentage">45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percentage">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="93"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title gradient-text">Tools & Others</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Gemini AI</span>
+                                <span class="skill-percentage">35%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="35"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CI/CD</span>
+                                <span class="skill-percentage">30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & <span class="gradient-text">Achievements</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/powerbi.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Membangun Data Dashboard Dengan Power BI</h3>
+                        <p class="certificate-issuer">TAALENTA - 2025</p>
+                        <p class="certificate-description">
+                            I have successfully completed a comprehensive professional certification in Building Data Dashboards with Power BI (Batch 7) from PT Taalenta Digital Inteleksia. During this intensive program, I mastered the end-to-end Business Intelligence workflow, including advanced data cleaning and transformation using Power Query, as well as designing efficient data models with Star Schema and proper cardinality. I am also proficient in utilizing DAX (Data Analysis Expressions) to create complex calculated columns and dynamic measures for in-depth analysis. Furthermore, I gained expertise in developing interactive and effective dashboards by implementing advanced visualization techniques like drill-throughs, tooltips, and slicers to deliver actionable business insights.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Power BI</span>
+                        </div>
+                        <a href="Sertifikat/Membangun Data Dashboard Dengan Power BI Batch 7.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/Nakkuliah.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Jakarta Smart City Forum 2023</h3>
+                        <p class="certificate-issuer">Jakarta Smart City - 2023</p>
+                        <p class="certificate-description">
+                            In 2023, I served as the Chief Data Officer for Jakarta Smart City, where I spearheaded the design and development of the 'Nakkuliah' program. My team and I successfully showcased this initiative at the Jakarta Smart City exhibition, where it was personally presented and officially recognized by the Governor of DKI Jakarta. The program received high appreciation for its innovation, further solidifying my expertise in strategic data leadership and impactful program design.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Figma</span>
+                            <span class="skill-badge">Codegniter</span>
+                            <span class="skill-badge">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/compete.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Compete Mate 2025</h3>
+                        <p class="certificate-issuer">Google Developer Students Club - 2025</p>
+                        <p class="certificate-description">
+                            In 2025, I served as a General Mentor for the Compete Mate competition, where my team secured 1st Place with the project UPREneurs. Beyond providing technical and strategic insights, I was honored to be a speaker and mentor during the Pitching Day event organized by GDG On Campus Universitas Gunadarma. This experience allowed me to contribute to the success of emerging innovators while demonstrating leadership in the Technology & Innovation sector.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Gemini AI</span>
+                            <span class="skill-badge">Vertex AI</span>
+                            <span class="skill-badge">PHP</span>
+                        </div>
+                        <div class="certificate-action-wrapper">
+                            <a href="Sertifikat/1st Compete Mate.pdf" class="certificate-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                View Certificate 1st Pitching Day
+                            </a>
+                            <a href="Sertifikat/General Mentor.pdf" class="certificate-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                View Certificate General Mentor
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/tableu.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Tableu Training</h3>
+                        <p class="certificate-issuer">Nusacodes - 2025</p>
+                        <p class="certificate-description">
+                            I have successfully completed a professional Tableau Training program certified by Nusacodes, which equipped me with essential skills in the end-to-end data analytics lifecycle. Throughout this training, I gained hands-on experience in data preparation and learned how to effectively discover insights from data through rigorous analysis. By applying fundamental visualization principles, I developed the expertise to design and build interactive dashboards that transform complex datasets into clear, actionable business intelligence. This certification (No. PA1709VO25XG) validates my proficiency in using Tableau as a primary tool for driving data-driven decision-making.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Tableu</span>
+                        </div>
+                        <a href="Sertifikat/Tableu Training.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/perancanganaplikasi.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Dasar Perancangan Aplikasi Web</h3>
+                        <p class="certificate-issuer">Lepkom - 2024</p>
+                        <p class="certificate-description">
+                            I have successfully completed a specialized training program in Basic Web Application Design at Gunadarma University, which provided me with a comprehensive foundation in the web development lifecycle. Throughout the course, I gained hands-on expertise in system analysis and database design, complemented by a strong focus on creating effective user interface designs. Additionally, the training deepened my technical proficiency in developing web-based applications using PHP and XAMPP, ensuring a practical understanding of both front-end and back-end integration. This certification (No. 285795) validates my ability to design and implement structured, functional web applications according to industry standards.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
+                        <a href="Sertifikat/Dasar Perancangan Aplikasi Web.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/golangmenengah.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Pemograman Go Untuk Tingkat Menengah</h3>
+                        <p class="certificate-issuer">Lepkom - 2024</p>
+                        <p class="certificate-description">
+                            I have successfully completed a specialized Go-Lang for Intermediate training program at Gunadarma University, which significantly advanced my backend development capabilities. Throughout this course, I mastered critical software engineering practices, including Test Driven Development (TDD) and Unit Testing, and deepened my technical proficiency in managing SQL databases and handling HTTP Requests within the Go ecosystem. Additionally, the program provided hands-on experience with Polymer for layout styling and data binding, as well as the end-to-end deployment process for modern applications. This certification (No. 266645) serves as a testament to my ability to build, test, and deploy scalable, high-performance web solutions using industry-standard Go-Lang methodologies.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Golang</span>
+                        </div>
+                        <a href="Sertifikat/Pemograman Go Untuk Tingkat Menengah.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/oraclemenengah.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Oracle Untuk Tingkat Menengah</h3>
+                        <p class="certificate-issuer">Lepkom - 2024</p>
+                        <p class="certificate-description">
+                            I have successfully completed an intermediate-level Oracle Database training program at Gunadarma University, which significantly strengthened my database management and advanced querying skills. Throughout this course, I gained hands-on expertise in creating and managing tables, as well as implementing robust constraint handling to ensure data integrity. I mastered advanced SQL techniques, including subqueries, view creation, and retrieving complex data from multiple tables. Furthermore, the training provided deep technical insights into PL/SQL concepts such as writing explicit cursors and effective exception handling, enabling me to develop more efficient and reliable database solutions. This certification (No. 017938) serves as a testament to my proficiency in managing sophisticated database objects and optimizing database performance within the Oracle ecosystem.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Oracle</span>
+                        </div>
+                        <a href="Sertifikat/Oracle Untuk Tingkat Menengah.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/golangpemula.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Pemrograman Go Untuk Tingkat Pemula</h3>
+                        <p class="certificate-issuer">Lepkom - 2023</p>
+                        <p class="certificate-description">
+                            I have successfully completed a comprehensive Go-Lang for Beginner training program at Gunadarma University, which established a solid foundation in modern backend development. The course covered fundamental programming concepts including variables, constants, and data conversion, as well as complex data structures like structs, pointers, slices, and maps. Beyond core syntax, I gained hands-on experience in building Go web servers and handling JSON data, while also exploring frontend integration through Polymer for client-side routing and layout management. This certification (No. 420637) validates my technical proficiency in developing structured and efficient applications using the Go programming language
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Golang</span>
+                        </div>
+                        <a href="Sertifikat/Pemograman Go Untuk Tingkat Pemula.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/oraclepemula.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Oracle Tingkat Pemula</h3>
+                        <p class="certificate-issuer">Lepkom - 2023</p>
+                        <p class="certificate-description">
+                            I have successfully completed the Oracle for Beginner training program at Gunadarma University, which provided a foundational understanding of database administration and PL/SQL programming. The course covered essential administrative tasks, including the installation of Oracle 11g, database creation, and user management. Additionally, I gained technical proficiency in Single-Row Functions and the core principles of PL/SQL, such as variable declaration, executing executable statements, and managing direct interactions with the Oracle Server. This certification (No. 994760) serves as the starting point of my technical expertise in managing and interacting with enterprise-level database systems.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Oracle</span>
+                        </div>
+                        <a href="Sertifikat/Oracle Untuk Tingkat Pemula.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/dasarweb.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Dasar Pemograman Berbasis Web</h3>
+                        <p class="certificate-issuer">Lepkom - 2022</p>
+                        <p class="certificate-description">
+                            I have successfully completed the Fundamental Web Programming training program at Gunadarma University, which provided a multi-disciplinary introduction to modern web development frameworks. Throughout the course, I gained foundational knowledge in various programming ecosystems, including Go and its control structures, as well as enterprise Java through J2EE, Servlets, and Java Server Pages (JSP). Additionally, the program introduced me to the .NET Framework and C#, where I learned to implement Server Controls and CSS within ASP.NET and manage Application State for web-based applications. This certification (No. 274452) validates my versatile technical base and my ability to navigate diverse backend technologies and server-side logic.
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">MySQL</span>
+                        </div>
+                        <a href="Sertifikat/Dasar Pemrograman Berbasis Web.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-ribbon">
+                        <svg class="ribbon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                    </div>
+                    <div class="certificate-image">
+                        <img src="image/dasardata.jpg" alt="Certificate">
+                        <div class="certificate-overlay"></div>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-title">Dasar Sistem Manajemen Basis Data</h3>
+                        <p class="certificate-issuer">Lepkom - 2022</p>
+                        <p class="certificate-description">
+                            I have successfully completed a comprehensive Go-Lang for Beginner training program at Gunadarma University, which established a solid foundation in modern backend development. The course covered fundamental programming concepts including variables, constants, and data conversion, as well as complex data structures like structs, pointers, slices, and maps. Beyond core syntax, I gained hands-on experience in building Go web servers and handling JSON data, while also exploring frontend integration through Polymer for client-side routing and layout management. This certification (No. 420637) validates my technical proficiency in developing structured and efficient applications using the Go programming language
+                        </p>
+                        <div class="certificate-skills">
+                            <span class="skill-badge">Golang</span>
+                        </div>
+                        <a href="Sertifikat/Dasar Sistem Manejemen Basis Data.pdf" class="certificate-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/retail.jpg" alt="E-Commerce Platform">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">IT Application Staff</h3>
+                        <p class="project-description">
+                            A full-featured application platform built with React, Next js, Node.js, Laravel, PHP Native, Oracle and PostgreSQL. Features include user authentication, and admin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP Native</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Oracle</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1d6mE6sm_v0yeSw3NG7_PHW1PSWCXXXWq/view?usp=sharing" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                See Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/astra.jpg" alt="Mobile App Design System">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fullstack Development</h3>
+                        <p class="project-description">
+                            A full-featured application platform built with Laravel, and MySQL. Features include user authentication, and admin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                       <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1_6KcjwaIw3qHEsgoI7D7E31w2_JiGSZN/view?usp=sharing" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                See Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's work together</h3>
+                    <p class="contact-text">
+                        I'm always interested in hearing about new projects and
+                        opportunities. Whether you have a question or just want to say
+                        hi, feel free to reach out!
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:divoalghafar12@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">divoalghafar12@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+6281289768510" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+62 812 8976 8510</div>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Bekasi, Indonesia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            <div class="footer">
+                <p>© 2026 Divo Al Ghafar. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
